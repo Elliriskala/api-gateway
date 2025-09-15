@@ -14,9 +14,9 @@ Nginx API Gateway links:
 
 Node.js API Gateway links:
 
-1. https://10.120.32.52/kissat3
-2. https://10.120.32.52/dragonball3
-3. https://10.120.32.52/weather?q=Helsinki
+1. http://10.120.32.52/kissat3
+2. http://10.120.32.52/dragonball3
+3. http://10.120.32.52/weather?q=Helsinki
 
 Configuration Files:
 
@@ -119,11 +119,11 @@ const services = [
   },
   {
     route: '/dragonball',
-    target: 'https://dragonball-api.com/api/characters/4',
+    target: 'http://dragonball-api.com/api/characters/4',
   },
   {
     route: '/weather',
-    target: 'https://api.openweathermap.org/data/2.5/weather',
+    target: 'http://api.openweathermap.org/data/2.5/weather',
     on: {
       proxyReq: (proxyReq: ClientRequest) => {
         // Append API key

@@ -20,11 +20,11 @@ const services = [
   },
   {
     route: '/dragonball',
-    target: 'https://dragonball-api.com/api/characters/4',
+    target: 'http://dragonball-api.com/api/characters/4',
   },
   {
     route: '/weather',
-    target: 'https://api.openweathermap.org/data/2.5/weather',
+    target: 'http://api.openweathermap.org/data/2.5/weather',
     on: {
       proxyReq: (proxyReq: ClientRequest) => {
         // Append API key
@@ -35,7 +35,6 @@ const services = [
     },
   },
 ];
-
 
 services.forEach(({route, target, on}) => {
   const proxyOptions = {
