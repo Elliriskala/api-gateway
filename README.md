@@ -14,9 +14,9 @@ Nginx API Gateway links:
 
 Node.js API Gateway links:
 
-1. https://[your-deployed-nodejs-app]/kissat3
-2. https://[your-deployed-nodejs-app]/dragonball3
-3. https://[your-deployed-nodejs-app]/weather?q=Helsinki
+1. https://10.120.32.52/kissat3
+2. https://10.120.32.52/dragonball3
+3. https://10.120.32.52/weather?q=Helsinki
 
 Configuration Files:
 
