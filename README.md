@@ -119,7 +119,7 @@ const services = [
   },
   {
     route: '/dragonball3',
-    target: 'http://dragonball-api.com/api',
+    target: 'https://dragonball-api.com/api/characters/4',
   },
   {
     route: '/weather',
