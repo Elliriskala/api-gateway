@@ -118,8 +118,8 @@ const services = [
     target: 'http://meowfacts.herokuapp.com/',
   },
   {
-    route: '/koirat3',
-    target: 'http://http.dog/200.jpg',
+    route: '/dragonball',
+    target: 'https://dragonball-api.com/api/characters/4',
   },
   {
     route: '/weather',

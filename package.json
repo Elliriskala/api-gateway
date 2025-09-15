@@ -23,7 +23,8 @@
     "express": "^4.21.2",
     "helmet": "^7.2.0",
     "mongoose": "^8.5.3",
-    "morgan": "^1.10.1"
+    "morgan": "^1.10.1",
+    "http-proxy-middleware": "^3.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
