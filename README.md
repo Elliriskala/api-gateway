@@ -1,26 +1,26 @@
 # Api Gateway assignment
 
-Apache API Gateway links:
+## Apache API Gateway links:
 
 1. http://10.120.32.81/kissat
 2. http://10.120.32.81/dragonball
 3. http://10.120.32.81/weather?q=Rome
 
-Nginx API Gateway links:
+## Nginx API Gateway links:
 
 1. http://10.120.33.68/kissat2
 2. http://10.120.33.68/dragonball2
 3. http://10.120.33.68/weather?q=Somero
 
-Node.js API Gateway links:
+## Node.js API Gateway links:
 
-1. http://10.120.32.52:3000/kissat3
-2. http://10.120.32.52:3000/dragonball3
-3. http://10.120.32.52:3000/weather?q=Helsinki
+1. http://10.120.32.52/kissat3
+2. http://10.120.32.52/dragonball3
+3. http://10.120.32.52/weather?q=Helsinki
 
-Configuration Files:
+# Configuration Files:
 
-Apache
+## Apache
 
 ```nginx
 <VirtualHost *:80>
@@ -44,7 +44,7 @@ Apache
 </VirtualHost>
 ```
 
-Nginx
+## Nginx
 
 ```js
 server {
@@ -94,7 +94,7 @@ server {
 }
 ```
 
-Node.js
+## Node.js
 
 ```js
 import 'dotenv/config';
