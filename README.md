@@ -14,9 +14,9 @@ Nginx API Gateway links:
 
 Node.js API Gateway links:
 
-1. http://10.120.32.52/kissat3
-2. http://10.120.32.52/dragonball3
-3. http://10.120.32.52/weather?q=Helsinki
+1. http://10.120.32.52:3000/kissat3
+2. http://10.120.32.52:3000/dragonball3
+3. http://10.120.32.52:3000/weather?q=Helsinki
 
 Configuration Files:
 
@@ -39,7 +39,7 @@ Apache
     # Adding api key to a request
     RewriteEngine On
     RewriteCond %{QUERY_STRING} !(^|&)appid=(&|$)
-    RewriteRule "^/weather" "https://api.openweathermap.org/data/2.5/weather?%{QUERY_STRING}&appid=<api_key" [P]
+    RewriteRule "^/weather" "https://api.openweathermap.org/data/2.5/weather?%{QUERY_STRING}&appid=<api_key>" [P]
     ProxyPassReverse "/weather" "https://api.openweathermap.org/data/2.5/weather"
 </VirtualHost>
 ```
@@ -115,15 +115,15 @@ app.disable('x-powered-by');
 const services = [
   {
     route: '/kissat3',
-    target: 'http://meowfacts.herokuapp.com/',
+    target: 'http://meowfacts.herokuapp.com',
   },
   {
-    route: '/dragonball',
-    target: 'http://dragonball-api.com/api/characters/4',
+    route: '/dragonball3',
+    target: 'http://dragonball-api.com/api',
   },
   {
     route: '/weather',
-    target: 'http://api.openweathermap.org/data/2.5/weather',
+    target: 'http://api.openweathermap.org/data/2.5',
     on: {
       proxyReq: (proxyReq: ClientRequest) => {
         // Append API key

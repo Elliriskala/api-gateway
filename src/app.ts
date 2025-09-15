@@ -16,15 +16,15 @@ app.disable('x-powered-by');
 const services = [
   {
     route: '/kissat3',
-    target: 'http://meowfacts.herokuapp.com/',
+    target: 'http://meowfacts.herokuapp.com',
   },
   {
-    route: '/dragonball',
-    target: 'http://dragonball-api.com/api/characters/4',
+    route: '/dragonball3',
+    target: 'http://dragonball-api.com/api',
   },
   {
     route: '/weather',
-    target: 'http://api.openweathermap.org/data/2.5/weather',
+    target: 'http://api.openweathermap.org/data/2.5',
     on: {
       proxyReq: (proxyReq: ClientRequest) => {
         // Append API key
